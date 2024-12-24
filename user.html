@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Email</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 50px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            margin: auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .message {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: green;
+            display: none;  /* Hidden by default */
+        }
+
+        .error {
+            color: red;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Sign In</h2>
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+
+        <button onclick="signIn()">Sign In</button>
+
+        <!-- Success message will be shown here -->
+        <p class="message" id="success-message">Sign-in successful!</p>
+
+        <!-- Error message will be shown if credentials are incorrect -->
+        <p class="error" id="error-message">Invalid email or password. Please try again.</p>
+    </div>
+
+    <script>
+        function signIn() {
+            // Hiding error message if visible
+            document.getElementById('error-message').style.display = 'none';
+
+            // Displaying success message
+            document.getElementById('success-message').style.display = 'block';
+
+            // Optionally, redirect the user to another page after a delay
+            setTimeout(function() {
+                // Replace 'welcome.html' with the actual page you want to redirect to
+                window.location.href = 'welcome.html';
+            }, 2000); // Redirect after 2 seconds
+        }
+    </script>
+
+</body>
+</html>

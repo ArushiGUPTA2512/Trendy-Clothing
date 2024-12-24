@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Shopping Cart</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+    <div class="product-container">
+        <h1>Our Products</h1>
+        <div class="product" onclick="addToCart('Product A', 15)">
+            <img src="image/purple.jpg" alt="Product A">
+            <h2>Product A</h2>
+            <p>$15</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product" onclick="addToCart('Product B', 25)">
+            <img src="image/boots.webp" alt="Product B">
+            <h2>Product B</h2>
+            <p>$25</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product" onclick="addToCart('Product C', 35)">
+            <img src="image/sweater.webp" alt="Product C">
+            <h2>Product C</h2>
+            <p>$35</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product" onclick="addToCart('Product C', 35)">
+            <img src="image/Pinksweat.jpg" alt="Product C">
+            <h2>Product D</h2>
+            <p>$25</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product" onclick="addToCart('Product C', 35)">
+            <img src="image/jacketoo.jpg" alt="Product C">
+            <h2>Product E</h2>
+            <p>$45</p>
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+
+    <div class="cart-container">
+        <h1>Your Cart</h1>
+        <ul id="cart-items">
+            <!-- Cart items will be dynamically inserted here -->
+        </ul>
+        <p>Total Price: $<span id="total-price">0.00</span></p>
+        <button onclick="checkout()">Checkout</button>
+    </div>
+
+    <script src="cart.js"></script>
+</body>
+</html>

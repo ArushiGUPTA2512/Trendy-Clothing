@@ -1,0 +1,175 @@
+ General Reset 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.icon{
+    display: flex;               /* Align icons horizontally */
+    align-items: center;         /* Center vertically */    
+    display: flex;     
+    padding: 10px;              /* Space around icons */
+}
+
+.icon i{
+    font-size: 25px;
+    background: chocolate;
+    padding: 10px;
+    margin:0px 15px;
+    border-radius: 10px;      /*round the corners of an icon*/
+}
+
+/* Menu Item Hover Effects */
+.icon :hover {
+    color: lightyellow;
+}
+
+/* Hover Effect for Icons */
+.icon :hover i {
+    transform: scale(1.1); /* Slightly scale the icon on hover */
+}
+
+.navbar{
+    width: 100%;
+    height: 70px;
+    padding: 0px;
+    background-color: lightyellow;  /*background for the navbar */
+    display: flex;           /* Flexbox for horizontal alignment */
+    justify-content: space-between; /* Distribute space between logo and menu */
+    align-items: center;     /* Vertically center the content */
+
+}
+
+.logo{
+    font-size: 50px;
+    color: chocolate;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+
+/* Menu Item Hover Effects */
+.icon a:hover {
+    color: chocolate;
+}
+
+/* Icon Styling */
+.icon a i {
+    font-size: 1.5rem; /* Adjust the icon size */
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect for Icons */
+.icon a:hover i {
+    transform: scale(1.1); /* Slightly scale the icon on hover */
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Parallax Sections */
+.parallax {
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.trendy {
+    background-image: url('image/micheile.jpg'); 
+}
+
+.collection {
+    background-image:  url('image/heather.jpg');
+}
+
+.influencers {
+    background-image: url('image/tutu.jpg');
+}
+
+/* Content Styling */
+.content h1, .content h2 {
+   
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.cta-button {
+    background-color: #ff6600;
+    padding: 1rem 3rem; /*space around button*/
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ff4500;
+}
+
+/* Gallery Section */
+.product-gallery {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.product-item {
+    text-align: center;
+}
+
+.product-item img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.influencer-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.influencer-gallery img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+/* Final Call to Action Section */
+.call-to-action {
+    background-color: #333;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.call-to-action h2 {
+    font-size: 2.5rem;
+    color: #ff6600;
+    margin-bottom: 1rem;
+}
+
+.call-to-action p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: white;
+}
