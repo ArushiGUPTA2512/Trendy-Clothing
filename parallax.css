@@ -9,7 +9,7 @@
     display: flex;               /* Align icons horizontally */
     align-items: center;         /* Center vertically */    
     display: flex;     
-    padding: 100px;              /* Space around icons */
+    padding: 10px;              /* Space around icons */
 }
 
 .icon i{
